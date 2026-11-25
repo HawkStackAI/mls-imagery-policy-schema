@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "0.1.0",
+  "exceptions": [],
+  "conflicts": [
+    "Citation conflict: the published guide quotes Rule 1.2(b) while the staff confirmation register records Section 1.3(b). One of the two citations is wrong; unresolved at fixture time."
+  ],
+  "supersedes": null,
+  "board": {
+    "id": "sabor",
+    "name": "San Antonio Board of REALTORS (SABOR)",
+    "state": "TX"
+  },
+  "status": "conflicting",
+  "effectiveDate": {
+    "date": null,
+    "certainty": "unknown"
+  },
+  "sources": [
+    {
+      "type": "primary_rulebook",
+      "citation": "SABOR rule as quoted in RELTO's published board guide: Rule 1.2(b)",
+      "url": null,
+      "retrieved": "2026-11-21"
+    },
+    {
+      "type": "board_staff_confirmation",
+      "citation": "SABOR confirmation register entry: Section 1.3(b)",
+      "url": null,
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "requirements": {
+    "disclosureRequired": true,
+    "placement": [
+      "unknown"
+    ],
+    "originalImageRequired": "unknown",
+    "onImageText": "unknown"
+  },
+  "confirmation": {
+    "status": "partially_confirmed",
+    "by": "SABOR staff",
+    "date": null,
+    "method": "email"
+  },
+  "notes": "A real conflict from RELTO's own corpus, shipped deliberately: consumers must flag it, not resolve it silently."
+}

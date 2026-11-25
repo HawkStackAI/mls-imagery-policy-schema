@@ -1,0 +1,239 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://relto.app/open/mls-imagery-policy-schema/0.1.0/policy-record.schema.json",
+  "title": "MLS Imagery Policy Record",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "board",
+    "status",
+    "sources",
+    "requirements",
+    "confirmation"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "0.1.0"
+    },
+    "board": {
+      "type": "object",
+      "required": [
+        "id",
+        "name"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "state": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "conflicting",
+        "unknown",
+        "superseded",
+        "unresolved_interpretation"
+      ],
+      "description": "The epistemic status of this record. Applications must branch on it; see examples/consume_policy.py."
+    },
+    "effectiveDate": {
+      "type": "object",
+      "required": [
+        "certainty"
+      ],
+      "properties": {
+        "date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "certainty": {
+          "type": "string",
+          "enum": [
+            "confirmed",
+            "unclear",
+            "unknown"
+          ]
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "citation"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "primary_rulebook",
+              "board_staff_confirmation",
+              "board_publication",
+              "secondary"
+            ]
+          },
+          "citation": {
+            "type": "string"
+          },
+          "url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "retrieved": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "requirements": {
+      "type": "object",
+      "required": [
+        "disclosureRequired",
+        "placement",
+        "originalImageRequired",
+        "onImageText"
+      ],
+      "properties": {
+        "disclosureRequired": {
+          "type": [
+            "boolean",
+            "string"
+          ],
+          "enum": [
+            true,
+            false,
+            "unknown"
+          ]
+        },
+        "placement": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "on_image",
+              "adjacent_to_image",
+              "public_remarks",
+              "private_remarks",
+              "photo_description",
+              "link_url_or_qr_to_original",
+              "unknown"
+            ]
+          }
+        },
+        "originalImageRequired": {
+          "type": [
+            "boolean",
+            "string"
+          ],
+          "enum": [
+            true,
+            false,
+            "unknown"
+          ]
+        },
+        "onImageText": {
+          "type": "string",
+          "enum": [
+            "permitted",
+            "prohibited",
+            "unknown"
+          ]
+        },
+        "placementDetail": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Board specific placement constraint that the placement enum cannot express, in the board's own terms (for example: 'within the first 180 characters of public remarks'). Consumers MUST surface this text with the generated instruction; dropping it produces an under-specified disclosure."
+        }
+      }
+    },
+    "exceptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Named contradictions between sources. A non-empty conflicts array requires status conflicting or unresolved_interpretation."
+    },
+    "supersedes": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "record": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "confirmation": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "confirmed",
+            "partially_confirmed",
+            "unconfirmed"
+          ]
+        },
+        "by": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "method": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

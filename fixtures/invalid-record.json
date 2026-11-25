@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "0.1.0",
+  "board": {
+    "id": "broken"
+  },
+  "status": "definitely",
+  "sources": [],
+  "requirements": {
+    "disclosureRequired": "maybe"
+  },
+  "confirmation": {
+    "status": "confirmed"
+  }
+}

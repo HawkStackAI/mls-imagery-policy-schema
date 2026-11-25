@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "exceptions": [],
+  "conflicts": [],
+  "supersedes": null,
+  "board": {
+    "id": "crmls",
+    "name": "California Regional MLS (CRMLS)",
+    "state": "CA"
+  },
+  "status": "superseded",
+  "effectiveDate": {
+    "date": "2026-02-01",
+    "certainty": "unclear"
+  },
+  "sources": [
+    {
+      "type": "board_publication",
+      "citation": "CRMLS FAQ, February 2026: no fine for digitally altered image rule violations",
+      "url": null,
+      "retrieved": "2026-11-25"
+    }
+  ],
+  "requirements": {
+    "disclosureRequired": true,
+    "placement": [
+      "adjacent_to_image"
+    ],
+    "originalImageRequired": true,
+    "onImageText": "unknown"
+  },
+  "confirmation": {
+    "status": "confirmed",
+    "by": "CRMLS FAQ (February 2026)",
+    "date": "2026-02-01",
+    "method": "publication"
+  },
+  "notes": "Superseded by the CRMLS MLS Citation Policy effective July 10, 2026. See samples/crmls.json.",
+  "supersededBy": "samples/crmls.json"
+}

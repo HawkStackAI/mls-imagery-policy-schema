@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "0.1.0",
+  "exceptions": [],
+  "conflicts": [],
+  "supersedes": null,
+  "board": {
+    "id": "canopy-mls",
+    "name": "Canopy MLS",
+    "state": "NC"
+  },
+  "status": "confirmed",
+  "effectiveDate": {
+    "date": null,
+    "certainty": "unknown"
+  },
+  "sources": [
+    {
+      "type": "board_staff_confirmation",
+      "citation": "Canopy MLS staff confirmation to RELTO research program: disclosure on the image itself; virtual tours require disclosure within the tour",
+      "url": null,
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "requirements": {
+    "disclosureRequired": true,
+    "placement": [
+      "on_image"
+    ],
+    "originalImageRequired": "unknown",
+    "onImageText": "permitted"
+  },
+  "confirmation": {
+    "status": "confirmed",
+    "by": "Canopy MLS staff",
+    "date": null,
+    "method": "email"
+  },
+  "notes": "Virtual tour disclosure within the tour is recorded in notes because placement values for tours are not yet modeled in schema 0.1.0."
+}

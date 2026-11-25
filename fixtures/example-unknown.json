@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "0.1.0",
+  "exceptions": [],
+  "conflicts": [],
+  "supersedes": null,
+  "board": {
+    "id": "example-unverified-mls",
+    "name": "Example Unverified MLS (synthetic fixture)",
+    "state": null
+  },
+  "status": "unknown",
+  "effectiveDate": {
+    "date": null,
+    "certainty": "unknown"
+  },
+  "sources": [
+    {
+      "type": "secondary",
+      "citation": "Synthetic fixture: no primary source has been retrieved for this board",
+      "url": null,
+      "retrieved": null
+    }
+  ],
+  "requirements": {
+    "disclosureRequired": "unknown",
+    "placement": [
+      "unknown"
+    ],
+    "originalImageRequired": "unknown",
+    "onImageText": "unknown"
+  },
+  "confirmation": {
+    "status": "unconfirmed",
+    "by": null,
+    "date": null,
+    "method": null
+  },
+  "notes": "Synthetic. Ships so consumers can test the unknown path without touching a real board's record."
+}

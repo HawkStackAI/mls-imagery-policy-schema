@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "0.1.0",
+  "exceptions": [],
+  "conflicts": [],
+  "supersedes": null,
+  "board": {
+    "id": "bright-mls",
+    "name": "Bright MLS",
+    "state": null
+  },
+  "status": "confirmed",
+  "effectiveDate": {
+    "date": null,
+    "certainty": "unknown"
+  },
+  "sources": [
+    {
+      "type": "board_staff_confirmation",
+      "citation": "Bright MLS staff reply to RELTO research inquiry, November 2026: disclosure belongs in Public and Private Remarks; text on the image itself violates Appendix C, Section 3.A",
+      "url": null,
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "requirements": {
+    "disclosureRequired": true,
+    "placement": [
+      "public_remarks",
+      "private_remarks"
+    ],
+    "originalImageRequired": "unknown",
+    "onImageText": "prohibited"
+  },
+  "confirmation": {
+    "status": "confirmed",
+    "by": "Bright MLS staff",
+    "date": "2026-11-09",
+    "method": "email"
+  }
+}

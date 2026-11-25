@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "0.1.0",
+  "exceptions": [],
+  "conflicts": [],
+  "supersedes": null,
+  "board": {
+    "id": "har",
+    "name": "Houston Association of REALTORS (HAR)",
+    "state": "TX"
+  },
+  "status": "confirmed",
+  "effectiveDate": {
+    "date": null,
+    "certainty": "unknown"
+  },
+  "sources": [
+    {
+      "type": "board_staff_confirmation",
+      "citation": "HAR MLS staff confirmation to the RELTO research program, November 21, 2026: the unaltered original is NOT required next to a virtually staged image; disclosure font and watermark are acceptable",
+      "url": null,
+      "retrieved": "2026-11-21"
+    }
+  ],
+  "requirements": {
+    "disclosureRequired": true,
+    "placement": [
+      "on_image"
+    ],
+    "originalImageRequired": false,
+    "onImageText": "permitted"
+  },
+  "confirmation": {
+    "status": "confirmed",
+    "by": "HAR MLS staff",
+    "date": "2026-11-21",
+    "method": "email"
+  }
+}

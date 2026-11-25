@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "0.1.0",
+  "exceptions": [],
+  "conflicts": [],
+  "supersedes": null,
+  "board": {
+    "id": "crmls",
+    "name": "California Regional MLS (CRMLS)",
+    "state": "CA"
+  },
+  "status": "confirmed",
+  "effectiveDate": {
+    "date": null,
+    "certainty": "unknown"
+  },
+  "sources": [
+    {
+      "type": "primary_rulebook",
+      "citation": "CRMLS Rules and Regulations, Rule 11.5.2 (digitally altered images)",
+      "url": null,
+      "retrieved": "2026-11-25"
+    },
+    {
+      "type": "board_publication",
+      "citation": "CRMLS MLS Citation Policy, effective July 10, 2026: Rule 11.5.2 violation carries a $250 fine after a warning notice and a two day correction window",
+      "url": "https://go.crmls.org",
+      "retrieved": "2026-11-25"
+    }
+  ],
+  "requirements": {
+    "disclosureRequired": true,
+    "placement": [
+      "adjacent_to_image"
+    ],
+    "originalImageRequired": true,
+    "onImageText": "unknown"
+  },
+  "confirmation": {
+    "status": "confirmed",
+    "by": "CRMLS (email to RELTO research program)",
+    "date": null,
+    "method": "email"
+  },
+  "notes": "The February 2026 CRMLS FAQ stating no fine applies is superseded by the July 10, 2026 citation policy. See fixtures/crmls-superseded.json."
+}

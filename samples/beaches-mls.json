@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "exceptions": [],
+  "conflicts": [],
+  "supersedes": null,
+  "board": {
+    "id": "beaches-mls",
+    "name": "BeachesMLS",
+    "state": "FL"
+  },
+  "status": "confirmed",
+  "effectiveDate": {
+    "date": null,
+    "certainty": "unknown"
+  },
+  "sources": [
+    {
+      "type": "primary_rulebook",
+      "citation": "BeachesMLS Rule 3.2.2: disclosure within the first 180 characters of public remarks and in photo descriptions; Rule 3.2.2a prohibits text on the image",
+      "url": null,
+      "retrieved": "2026-11-20"
+    }
+  ],
+  "requirements": {
+    "disclosureRequired": true,
+    "placement": [
+      "public_remarks",
+      "photo_description"
+    ],
+    "originalImageRequired": "unknown",
+    "onImageText": "prohibited",
+    "placementDetail": "Disclosure must appear within the first 180 characters of the public remarks, and within the photo descriptions (BeachesMLS Rule 3.2.2)."
+  },
+  "confirmation": {
+    "status": "confirmed",
+    "by": "BeachesMLS (rulebook; staff confirmation on file)",
+    "date": null,
+    "method": "rulebook"
+  }
+}
